@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    text-align: center;
+    background-color: rgb(250, 53, 53);
+    padding: 20px;
+}
+header h1{
+    color: white;
+}
+body {
+    background-color: lightgray;
+    background-image: url("bodybackground.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+
+div {
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    min-height: 600px;
+    background-color: white;
+}
+
+div li {
+    list-style: none;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid black;
+    position: relative;
+    background-color:gainsboro;
+    font-size:20px;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    background-color: green;
+}
+
+input {
+    padding: 10px 0px;
+    padding: 10px;
+    float: left;
+    border:0;
+    width:75%;
+}
+
+button {
+    margin: 0;
+    padding: 10px;
+    float: left;
+    border :0;
+    width:25%;
+    outline:none;
+}
+
+form #clear {
+    clear: both;
+}
+div span{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:10px 15px; 
+    color:black;
+   
+}
+div li:hover{
+    background-color:gray;
+    transition:250ms;
+}
+div span:hover{
+    background-color:rgb(247, 64, 64);
+    color:white;
+    transition:250ms;
+}
+button:hover{
+    background-color:rgb(151, 150, 150);
+    transition: 250ms;
+}
+input:focus{
+    box-shadow:1px 1px rgb(154, 154, 233);
+}
+div  li.completed {
+    background: #888;
+    background-image:url("completedbackground.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-decoration: line-through;
+}
+div li.completed::before{
+    content:"";
+    background-image: url("tick.svg");
+    background-repeat: no-repeat;
+    padding:10px;
+    position: absolute;
+    left:3px;
+    bottom:11px;
+}
+
+
+#tail{
+    padding: 10px;
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+#tail li{
+    padding:10px;
+    display:inline-block;
+    font-size:50px;
+}
+#tail li:hover{
+    font-size:80px;
+    transition: 600ms;
+}
+#fab{
+    color:#264381;
+}
+#fab:hover{
+    color:#0a1f4d;
+}
+#google{
+    color:#d34836;
+}
+#google:hover{
+    color:#ad2614;
+}
+#twit{
+    color: #0084b4;
+}
+#twit:hover{
+    color:#037097;
+}
